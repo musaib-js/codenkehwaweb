@@ -3,6 +3,8 @@ import { Input } from "@/components/ui/input"
 import { Textarea } from "@/components/ui/textarea"
 import { useState } from "react"
 import sphere from "@/assets/sphere.svg"
+import { useToast } from "@/hooks/use-toast"
+import { Toaster } from "@/components/ui/toaster"
 
 export function ContactForm() {
   const [formData, setFormData] = useState({
@@ -10,11 +12,15 @@ export function ContactForm() {
     name: '',
     message: ''
   })
+  const { toast } = useToast()
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault()
-    // Handle form submission
-    console.log('Form submitted:', formData)
+    console.log("coming here")
+    toast({
+      title: "Wohoo! 🎉",
+      description: "Our team will get back to you soon.",
+    })
   }
 
   return (
@@ -32,7 +38,7 @@ export function ContactForm() {
             <p className="text-gray-400 mb-8">
               A good design is not only aesthetically pleasing, but also functional. It should be able to solve the problem
             </p>
-            <form onSubmit={handleSubmit} className="space-y-6">
+            <div  className="space-y-6">
               <Input
                 type="email"
                 placeholder="Your Email"
@@ -54,15 +60,16 @@ export function ContactForm() {
                 onChange={(e) => setFormData({ ...formData, message: e.target.value })}
               />
               <Button 
-                type="submit"
-                className="w-full bg-gradient-to-r from-pink-400 to-purple-500 hover:from-pink-500 hover:to-purple-600"
+                onClick={handleSubmit}
+                className="w-full bg-gradient-to-r from-pink-400 to-purple-500 hover:from-pink-500 hover:to-purple-600 cursor-pointer"
               >
                 Get in Touch
               </Button>
-            </form>
+            </div>
           </div>
         </div>
       </div>
+      <Toaster />
     </section>
   )
 }
