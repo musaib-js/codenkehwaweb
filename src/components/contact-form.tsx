@@ -1,9 +1,8 @@
-'use client'
-
 import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
 import { Textarea } from "@/components/ui/textarea"
 import { useState } from "react"
+import globe from "@/assets/globe.svg"
 
 export function ContactForm() {
   const [formData, setFormData] = useState({
@@ -24,7 +23,7 @@ export function ContactForm() {
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           {/* Globe Illustration */}
           <div className="hidden lg:block">
-            <svg
+            {/* <svg
               viewBox="0 0 400 400"
               className="w-full max-w-lg mx-auto"
               stroke="currentColor"
@@ -33,7 +32,7 @@ export function ContactForm() {
               strokeLinecap="round"
               strokeLinejoin="round"
             >
-              {/* Horizontal lines */}
+
               {Array.from({ length: 8 }).map((_, i) => (
                 <path
                   key={`h${i}`}
@@ -41,7 +40,7 @@ export function ContactForm() {
                   className="text-gray-700"
                 />
               ))}
-              {/* Vertical lines */}
+
               {Array.from({ length: 12 }).map((_, i) => (
                 <path
                   key={`v${i}`}
@@ -49,7 +48,8 @@ export function ContactForm() {
                   className="text-gray-700"
                 />
               ))}
-            </svg>
+            </svg> */}
+            <img src={globe} alt="Globe" className="w-full max-w-lg mx-auto" />
           </div>
 
           {/* Contact Form */}
