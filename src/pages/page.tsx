@@ -23,7 +23,7 @@ export default function LandingPage() {
         <div className="flex items-center gap-4">
           <Button variant="ghost">Home</Button>
           <Button className="bg-gradient-to-r from-pink-400 to-purple-500 hover:from-pink-500 hover:to-purple-600">
-            Get Started
+          <a  href="#contact"  className="text-white hover:text-white">Get Started</a>
           </Button>
         </div>
       </nav>
@@ -39,7 +39,7 @@ export default function LandingPage() {
           digital age. <br></br>Your idea, Our Code. Your Success, Our Pride.
         </p>
         <Button className="bg-gradient-to-r from-pink-400 to-purple-500 hover:from-pink-500 hover:to-purple-600 px-8 py-6 text-lg">
-          Get Started Now
+          <a  href="#contact"  className="text-white hover:text-white">Get Started Now</a>
         </Button>
       </section>
 
@@ -132,7 +132,6 @@ export default function LandingPage() {
       {/* Background Gradient */}
       <div className="fixed bottom-0 left-0 right-0 h-96 bg-gradient-to-r from-pink-500 to-purple-600 blur-3xl opacity-20" />
 
-      {/* Bottom Toolbar */}
     </div>
   );
 }
