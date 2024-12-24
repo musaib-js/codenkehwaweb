@@ -18,29 +18,6 @@ export function TrialCTA() {
             </div>
             <div className="hidden md:block">
               <img src={Worldmap} alt="World Map" className="w-full max-w-lg ml-auto" />
-              {/* <svg
-                viewBox="0 0 400 400"
-                className="w-full max-w-lg ml-auto"
-                fill="none"
-                stroke="currentColor"
-                strokeWidth="1"
-                strokeLinecap="round"
-                strokeLinejoin="round"
-              >
-                <path
-                  d="M200,50 C300,50 350,150 350,200 C350,250 300,350 200,350 C100,350 50,250 50,200 C50,150 100,50 200,50"
-                  className="text-white/20"
-                />
-                <path
-                  d="M200,100 C270,100 300,170 300,200 C300,230 270,300 200,300 C130,300 100,230 100,200 C100,170 130,100 200,100"
-                  className="text-white/20"
-                />
-                <path
-                  d="M200,150 C240,150 250,190 250,200 C250,210 240,250 200,250 C160,250 150,210 150,200 C150,190 160,150 200,150"
-                  className="text-white/20"
-                />
-                <circle cx="200" cy="200" r="5" className="text-white fill-current" />
-              </svg> */}
             </div>
           </div>
         </div>
