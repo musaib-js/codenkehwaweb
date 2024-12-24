@@ -1,4 +1,5 @@
 import { Button } from "@/components/ui/button"
+import Worldmap from "@/assets/world.svg"
 
 export function TrialCTA() {
   return (
@@ -16,7 +17,8 @@ export function TrialCTA() {
               </Button>
             </div>
             <div className="hidden md:block">
-              <svg
+              <img src={Worldmap} alt="World Map" className="w-full max-w-lg ml-auto" />
+              {/* <svg
                 viewBox="0 0 400 400"
                 className="w-full max-w-lg ml-auto"
                 fill="none"
@@ -38,7 +40,7 @@ export function TrialCTA() {
                   className="text-white/20"
                 />
                 <circle cx="200" cy="200" r="5" className="text-white fill-current" />
-              </svg>
+              </svg> */}
             </div>
           </div>
         </div>
