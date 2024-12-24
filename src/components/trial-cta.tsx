@@ -9,7 +9,7 @@ export function TrialCTA() {
             <div>
               <p className="text-white/90 text-lg mb-4">Want a quote?</p>
               <h2 className="text-4xl md:text-5xl font-bold text-white mb-8 leading-tight">
-                Fell Free to Contact Us and Get a Free Quote
+                Feel Free to Contact Us and Get a Free Quote
               </h2>
               <Button variant="secondary" className="bg-black text-white hover:bg-gray-900">
                 Contact Now

@@ -19,7 +19,7 @@ export function ContactForm() {
   }
 
   return (
-    <section className="py-20 bg-black">
+    <section className="py-20 bg-black" id="contact">
       <div className="container mx-auto px-4">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           {/* Globe Illustration */}

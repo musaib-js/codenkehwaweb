@@ -6,12 +6,12 @@ const companies = [
   { name: "Get Advice", logo: "Get Advice" },
   { name: "Disha", logo: "Disha" },
   { name: "The Asian Real Estate", logo: "The Asian Real Estate", link: "https://theasianrealestate.in" },
-  { name: "Mirchal Sir's Tutorials", logo: "Mirchal Sir's Tutorials" }
+  { name: "Mirchal Sir's Tutorials", logo: "Mirchal Sir's Tutorials" },
 ]
 
 export function CompanyLogos() {
   return (
-    <section className="bg-black">
+    <section className="bg-black" id="clients">
       <div className="container mx-auto px-4">
         <h2 className="text-4xl md:text-5xl font-bold text-center text-white mb-16">
           Companies we Worked<br />With in Since 2020
@@ -22,7 +22,7 @@ export function CompanyLogos() {
               <span className="text-gray-500 font-medium text-xl" title={company.name}>
                 {
                   company.link ? (
-                    <a href={company.link} target="_blank" rel="noopener noreferrer">
+                    <a href={company.link} target="_blank" rel="noopener noreferrer" className="text-gray-400">
                       {company?.logo?.length > 10 ? company.logo.slice(0, 10) + "..." : company.logo}
                     </a>
                   ) : (
