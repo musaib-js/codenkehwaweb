@@ -1,11 +1,11 @@
-import { Button } from "@/components/ui/button"
-import { Card } from "@/components/ui/card"
-import { FeatureBoxes } from "@/components/feature-boxes"
-import { OrbitalSection } from "@/components/orbital-section"
-import { CompanyLogos } from "@/components/company-logos"
-import { TrialCTA } from "@/components/trial-cta"
-import { ContactForm } from "@/components/contact-form"
-import { Footer } from "@/components/footer"
+import { Button } from "@/components/ui/button";
+import { Card } from "@/components/ui/card";
+import { FeatureBoxes } from "@/components/feature-boxes";
+import { OrbitalSection } from "@/components/orbital-section";
+import { CompanyLogos } from "@/components/company-logos";
+import { TrialCTA } from "@/components/trial-cta";
+import { ContactForm } from "@/components/contact-form";
+import { Footer } from "@/components/footer";
 
 export default function LandingPage() {
   return (
@@ -31,10 +31,12 @@ export default function LandingPage() {
       {/* Hero Section */}
       <section className="container mx-auto px-4 py-20 text-center relative z-10">
         <h1 className="text-5xl md:text-7xl font-bold mb-6 leading-tight">
-        Transforming Ideas into <br />Digital Reality
+          Transforming Ideas into <br />
+          Digital Reality
         </h1>
         <p className="text-gray-400 max-w-2xl mx-auto mb-8">
-        We craft innovative software solutions to empower your business in the digital age. <br></br>Your idea, Our Code. Your Success, Our Pride.
+          We craft innovative software solutions to empower your business in the
+          digital age. <br></br>Your idea, Our Code. Your Success, Our Pride.
         </p>
         <Button className="bg-gradient-to-r from-pink-400 to-purple-500 hover:from-pink-500 hover:to-purple-600 px-8 py-6 text-lg">
           Get Started Now
@@ -45,6 +47,8 @@ export default function LandingPage() {
       <section className="container mx-auto px-4 pb-32 relative z-10">
         <div className="bg-gray-900 rounded-lg p-6 shadow-2xl">
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+
+            {/* Left Reviews */}
             <Card className="bg-gray-800 border-gray-700">
               <div className="p-4 space-y-4">
                 {[1, 2, 3, 4].map((item) => (
@@ -55,25 +59,41 @@ export default function LandingPage() {
                 ))}
               </div>
             </Card>
+
+            {/* Center Preview */}
             <div className="space-y-6">
               <Card className="bg-gray-800 border-gray-700 p-6">
                 <div className="w-24 h-24 mx-auto relative">
                   <div className="absolute inset-0 rounded-full border-4 border-gray-700" />
-                  <div className="absolute inset-0 rounded-full border-4 border-t-pink-400 border-r-purple-500" style={{ transform: 'rotate(45deg)' }} />
+                  <div
+                    className="absolute inset-0 rounded-full border-4 border-t-pink-400 border-r-purple-500"
+                    style={{ transform: "rotate(45deg)" }}
+                  />
                 </div>
               </Card>
+
+              {/* Growth Bar */}
               <Card className="bg-gray-800 border-gray-700 p-6">
                 <div className="flex items-end justify-between h-32 gap-2">
                   {[40, 60, 75, 85, 95].map((height, i) => (
                     <div
                       key={i}
-                      className="w-1/5 bg-gradient-to-t from-pink-400 to-purple-500 rounded"
-                      style={{ height: `${height}%` }}
+                      className={`w-1/5 bg-gradient-to-t from-pink-400 to-purple-500 rounded opacity-0 animate-bar`}
+                      style={{
+                        height: `${height}%`,
+                        animationDelay: `${i * 0.3}s`, 
+                      }}
                     />
                   ))}
                 </div>
+                <div className="flex justify-center mt-4 text-gray-400">
+                  Your <span className="text-pink-400 mx-1"> Growth </span>
+                </div>
               </Card>
             </div>
+
+            {/* Right Reviews */}
+
             <Card className="bg-gray-800 border-gray-700">
               <div className="p-4 space-y-4">
                 {[1, 2, 3, 4].map((item) => (
@@ -93,13 +113,13 @@ export default function LandingPage() {
 
       {/* Feature Boxes */}
       <FeatureBoxes />
-      
+
       {/* Orbital Section */}
       <OrbitalSection />
-      
+
       {/* Company Logos */}
       <CompanyLogos />
-      
+
       {/* Trial CTA */}
       <TrialCTA />
 
@@ -113,7 +133,6 @@ export default function LandingPage() {
       <div className="fixed bottom-0 left-0 right-0 h-96 bg-gradient-to-r from-pink-500 to-purple-600 blur-3xl opacity-20" />
 
       {/* Bottom Toolbar */}
-         </div>
-  )
+    </div>
+  );
 }
-
