@@ -1,5 +1,9 @@
 import { useEffect, useState } from 'react'
 import { Button } from "@/components/ui/button"
+import django from "@/assets/dj.svg"
+import react from "@/assets/react.svg"
+import node from "@/assets/node.svg"
+import web from "@/assets/web.svg"
 
 export function OrbitalSection() {
   const [rotation, setRotation] = useState(0)
@@ -30,7 +34,7 @@ export function OrbitalSection() {
             {[1, 2, 3].map((ring) => (
               <div
                 key={ring}
-                className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 rounded-full border border-gray-800"
+                className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 rounded-full border border-gray-800 text-white"
                 style={{
                   width: `${ring * 33}%`,
                   height: `${ring * 33}%`,
@@ -40,24 +44,32 @@ export function OrbitalSection() {
             ))}
 
             {/* Floating Icons */}
-            <div className="absolute top-0 left-1/2 -translate-x-1/2 w-12 h-12 bg-purple-500 rounded-full flex items-center justify-center transform -translate-y-6"
+            <div className="absolute top-0 left-1/2 -translate-x-1/2 w-12 h-12 bg-white rounded-full flex items-center justify-center transform -translate-y-6"
                  style={{ transform: `rotate(${-rotation}deg) translateY(-150px) rotate(${rotation}deg)` }}>
-              <span className="text-white text-xl">💻</span>
+              <span className="text-white text-xl">
+                <img src={django} alt="Django" className="w-8 h-8" />
+              </span>
             </div>
             
-            <div className="absolute top-1/2 right-0 w-12 h-12 bg-yellow-400 rounded-full flex items-center justify-center transform translate-x-6"
+            <div className="absolute top-1/2 right-0 w-12 h-12 bg-white rounded-full flex items-center justify-center transform translate-x-6"
                  style={{ transform: `rotate(${-rotation}deg) translateX(150px) rotate(${rotation}deg)` }}>
-              <span className="text-black text-2xl">📱</span>
+              <span className="text-black text-2xl">
+                <img src={react} alt = "React" className="w-8 h-8" />
+              </span>
             </div>
             
-            <div className="absolute bottom-0 left-1/2 -translate-x-1/2 w-12 h-12 bg-orange-500 rounded-full flex items-center justify-center transform translate-y-6"
+            <div className="absolute bottom-0 left-1/2 -translate-x-1/2 w-12 h-12 bg-white rounded-full flex items-center justify-center transform translate-y-6"
                  style={{ transform: `rotate(${-rotation}deg) translateY(150px) rotate(${rotation}deg)` }}>
-              <span className="text-white text-xl">🎲</span>
+              <span className="text-white text-xl">
+                <img src={node} alt = "NodeJS" className="w-8 h-8" />
+              </span>
             </div>
             
-            <div className="absolute top-1/2 left-0 w-12 h-12 bg-blue-500 rounded-full flex items-center justify-center transform -translate-x-6"
+            <div className="absolute top-1/2 left-0 w-12 h-12 bg-white rounded-full flex items-center justify-center transform -translate-x-6"
                  style={{ transform: `rotate(${-rotation}deg) translateX(-150px) rotate(${rotation}deg)` }}>
-              <span className="text-white font-bold">W</span>
+              <span className="text-white font-bold">
+                <img src={web} alt = "Web" className="w-8 h-8" />
+              </span>
             </div>
           </div>
 

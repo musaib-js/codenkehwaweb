@@ -13,7 +13,7 @@ export function TrialCTA() {
                 Feel Free to Contact Us and Get a Free Quote
               </h2>
               <Button variant="secondary" className="bg-black text-white hover:bg-gray-900">
-                Contact Now
+                <a href="#contact" className="text-white hover:text-white">Contact Now</a>
               </Button>
             </div>
             <div className="hidden md:block">
