@@ -8,6 +8,8 @@ import { ContactForm } from "@/components/contact-form";
 import { Footer } from "@/components/footer";
 import AnimatedChat from "@/components/animated-messages";
 import AnimatedGrowth from "@/components/growth-charts";
+import ChatInterface from "@/components/ai-chat";
+import { Users } from "lucide-react";
 
 export default function LandingPage() {
   return (
@@ -52,16 +54,16 @@ export default function LandingPage() {
       <section className="container mx-auto px-4 pb-32 relative z-10">
         <div className="bg-gray-900 rounded-lg p-6 shadow-2xl">
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-
-
             <AnimatedChat />
             <AnimatedGrowth />
-
-            <Card className="bg-gray-800 border-gray-700">
+            <ChatInterface />
+            {/* <Card className="bg-gray-800 border-gray-700">
               <div className="p-4 space-y-4">
                 {[1, 2, 3, 4].map((item) => (
                   <div key={item} className="flex items-center gap-3">
-                    <div className="w-10 h-10 rounded-full bg-gray-700" />
+                    <div className="w-10 h-10 rounded-full bg-gray-700 text-gray-400 flex items-center justify-center">
+                      <Users height={24} />
+                    </div>
                     <div className="space-y-2 flex-1">
                       <div className="h-4 bg-gray-700 rounded w-3/4" />
                       <div className="h-3 bg-gray-700 rounded w-1/2" />
@@ -69,7 +71,7 @@ export default function LandingPage() {
                   </div>
                 ))}
               </div>
-            </Card>
+            </Card> */}
           </div>
         </div>
       </section>

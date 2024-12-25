@@ -40,7 +40,7 @@ export default function AnimatedGrowth() {
             style={{ transform: `rotate(${progress * 3.6}deg)` }}
           />
           <div className="absolute inset-0 flex items-center justify-center text-white font-bold text-lg">
-            {progress}%
+            {progress}% 
           </div>
         </div>
       </Card>
