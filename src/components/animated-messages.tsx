@@ -28,13 +28,13 @@ export default function AnimatedChat() {
   }, [])
 
   return (
-    <Card className="bg-gray-800 border-gray-700">
+    <Card className="bg-gray-800 border-gray-700 max-h-screen overflow-y-auto">
       <div className="p-4 space-y-4">
         {visibleMessages.map((item) => (
           <div 
             key={item.id} 
-            className={`flex items-center gap-3 opacity-0 transition-opacity duration-500 ease-in ${
-              visibleMessages.includes(item) ? 'opacity-100' : ''
+            className={`flex items-center gap-3 flex-wrap transition-opacity duration-500 ease-in ${
+              visibleMessages.includes(item) ? 'opacity-100' : 'opacity-0'
             }`}
           >
             <div className="w-8 h-8 rounded-full bg-gray-700 flex items-center justify-center">
@@ -48,7 +48,11 @@ export default function AnimatedChat() {
                 </svg>
               )}
             </div>
-            <div className={`h-6 bg-gray-700 rounded w-3/4 px-2 flex items-center ${item.isUser?'text-gray-400':'text-pink-400'}`}>
+            <div 
+              className={`h-auto bg-gray-700 rounded w-3/4 px-2 py-1 flex items-center break-words max-w-full ${
+                item.isUser ? 'text-gray-400' : 'text-pink-400'
+              }`}
+            >
               {item.text}
             </div>
           </div>
@@ -57,4 +61,3 @@ export default function AnimatedChat() {
     </Card>
   )
 }
-
