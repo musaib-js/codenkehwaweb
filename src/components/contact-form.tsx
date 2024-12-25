@@ -27,18 +27,16 @@ export function ContactForm() {
     <section className="py-20 bg-black" id="contact">
       <div className="container mx-auto px-4">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
-          {/* Globe Illustration */}
           <div className="hidden lg:block">
             <img src={sphere} alt="Globe" className="w-full max-w-lg mx-auto" />
           </div>
 
-          {/* Contact Form */}
           <div>
             <h2 className="text-4xl md:text-5xl font-bold text-white mb-4">Get In Touch</h2>
             <p className="text-gray-400 mb-8">
               A good design is not only aesthetically pleasing, but also functional. It should be able to solve the problem
             </p>
-            <div  className="space-y-6">
+            <div className="relative space-y-6 z-50">
               <Input
                 type="email"
                 placeholder="Your Email"
