@@ -1,5 +1,4 @@
 import { Button } from "@/components/ui/button";
-import { Card } from "@/components/ui/card";
 import { FeatureBoxes } from "@/components/feature-boxes";
 import { OrbitalSection } from "@/components/orbital-section";
 import { CompanyLogos } from "@/components/company-logos";
@@ -9,7 +8,6 @@ import { Footer } from "@/components/footer";
 import AnimatedChat from "@/components/animated-messages";
 import AnimatedGrowth from "@/components/growth-charts";
 import ChatInterface from "@/components/ai-chat";
-import { Users } from "lucide-react";
 
 export default function LandingPage() {
   return (
