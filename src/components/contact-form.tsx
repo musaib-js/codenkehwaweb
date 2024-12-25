@@ -5,6 +5,7 @@ import { useState } from "react"
 import sphere from "@/assets/sphere.svg"
 import { useToast } from "@/hooks/use-toast"
 import { Toaster } from "@/components/ui/toaster"
+import TechOrbit from "./tech-orbit"
 
 export function ContactForm() {
   const [formData, setFormData] = useState({
@@ -28,7 +29,8 @@ export function ContactForm() {
       <div className="container mx-auto px-4">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           <div className="hidden lg:block">
-            <img src={sphere} alt="Globe" className="w-full max-w-lg mx-auto" />
+            {/* <img src={sphere} alt="Globe" className="w-full max-w-lg mx-auto" /> */}
+            <TechOrbit />
           </div>
 
           <div>
