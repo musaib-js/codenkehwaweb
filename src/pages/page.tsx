@@ -6,6 +6,8 @@ import { CompanyLogos } from "@/components/company-logos";
 import { TrialCTA } from "@/components/trial-cta";
 import { ContactForm } from "@/components/contact-form";
 import { Footer } from "@/components/footer";
+import AnimatedChat from "@/components/animated-messages";
+import AnimatedGrowth from "@/components/growth-charts";
 
 export default function LandingPage() {
   return (
@@ -21,9 +23,10 @@ export default function LandingPage() {
           <span className="text-xl font-bold">CodeNKehwa</span>
         </div>
         <div className="flex items-center gap-4">
-          <Button variant="ghost">Home</Button>
           <Button className="bg-gradient-to-r from-pink-400 to-purple-500 hover:from-pink-500 hover:to-purple-600">
-          <a  href="#contact"  className="text-white hover:text-white">Get Started</a>
+            <a href="#contact" className="text-white hover:text-white">
+              Get Started
+            </a>
           </Button>
         </div>
       </nav>
@@ -39,7 +42,9 @@ export default function LandingPage() {
           digital age. <br></br>Your idea, Our Code. Your Success, Our Pride.
         </p>
         <Button className="bg-gradient-to-r from-pink-400 to-purple-500 hover:from-pink-500 hover:to-purple-600 px-8 py-6 text-lg">
-          <a  href="#contact"  className="text-white hover:text-white">Get Started Now</a>
+          <a href="#contact" className="text-white hover:text-white">
+            Get Started Now
+          </a>
         </Button>
       </section>
 
@@ -48,51 +53,9 @@ export default function LandingPage() {
         <div className="bg-gray-900 rounded-lg p-6 shadow-2xl">
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
 
-            {/* Left Reviews */}
-            <Card className="bg-gray-800 border-gray-700">
-              <div className="p-4 space-y-4">
-                {[1, 2, 3, 4].map((item) => (
-                  <div key={item} className="flex items-center gap-3">
-                    <div className="w-8 h-8 rounded-full bg-gray-700" />
-                    <div className="h-4 bg-gray-700 rounded w-3/4" />
-                  </div>
-                ))}
-              </div>
-            </Card>
 
-            {/* Center Preview */}
-            <div className="space-y-6">
-              <Card className="bg-gray-800 border-gray-700 p-6">
-                <div className="w-24 h-24 mx-auto relative">
-                  <div className="absolute inset-0 rounded-full border-4 border-gray-700" />
-                  <div
-                    className="absolute inset-0 rounded-full border-4 border-t-pink-400 border-r-purple-500"
-                    style={{ transform: "rotate(45deg)" }}
-                  />
-                </div>
-              </Card>
-
-              {/* Growth Bar */}
-              <Card className="bg-gray-800 border-gray-700 p-6">
-                <div className="flex items-end justify-between h-32 gap-2">
-                  {[40, 60, 75, 85, 95].map((height, i) => (
-                    <div
-                      key={i}
-                      className={`w-1/5 bg-gradient-to-t from-pink-400 to-purple-500 rounded opacity-0 animate-bar`}
-                      style={{
-                        height: `${height}%`,
-                        animationDelay: `${i * 0.3}s`, 
-                      }}
-                    />
-                  ))}
-                </div>
-                <div className="flex justify-center mt-4 text-gray-400">
-                  Your <span className="text-pink-400 mx-1"> Growth </span>
-                </div>
-              </Card>
-            </div>
-
-            {/* Right Reviews */}
+            <AnimatedChat />
+            <AnimatedGrowth />
 
             <Card className="bg-gray-800 border-gray-700">
               <div className="p-4 space-y-4">
@@ -131,7 +94,6 @@ export default function LandingPage() {
 
       {/* Background Gradient */}
       <div className="fixed bottom-0 left-0 right-0 h-96 bg-gradient-to-r from-pink-500 to-purple-600 blur-3xl opacity-20" />
-
     </div>
   );
 }
