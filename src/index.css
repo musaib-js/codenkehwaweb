@@ -164,8 +164,8 @@ button:focus-visible {
 
 .particle {
   position: absolute;
-  width: 6px;
-  height: 6px;
+  width: 5px;
+  height: 5px;
   background-color: rgba(255, 255, 255, 0.8);
   border-radius: 50%;
   animation: moveParticles 20s linear infinite;

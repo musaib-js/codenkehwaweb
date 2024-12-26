@@ -1,11 +1,11 @@
 import { Card } from "@/components/ui/card"
 
 const companies = [
+  { name: "The Asian Real Estate", logo: "The Asian Real Estate", link: "https://www.theasianrealestate.com" },
+  { name: "Growth Gear Innovations", logo: "Growth Gear Innovations", link: "https://growthgearinnovations.in" },
   { name: "PILF", logo: "PILF", link: "https://pilf.in" },
   { name: "Ganjean Health", logo: "Ganjean Health", link: "https://ganjean.com"},
-  { name: "Get Advice", logo: "Get Advice" },
   { name: "Disha", logo: "Disha" },
-  { name: "The Asian Real Estate", logo: "The Asian Real Estate", link: "https://theasianrealestate.in" },
   { name: "Mirchal Sir's Tutorials", logo: "Mirchal Sir's Tutorials" },
 ]
 
