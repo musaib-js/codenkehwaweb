@@ -14,7 +14,7 @@ export function CompanyLogos() {
     <section className="bg-black" id="clients">
       <div className="container mx-auto px-4">
         <h2 className="text-4xl md:text-5xl font-bold text-center text-white mb-16">
-          Companies we Worked<br />With in Since 2020
+          Companies we've Worked<br />With
         </h2>
         <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-6">
           {companies.map((company) => (
