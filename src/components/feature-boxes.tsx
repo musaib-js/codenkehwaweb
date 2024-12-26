@@ -6,32 +6,32 @@ const features = [
   {
     icon: Globe,
     title: "Web Development",
-    description: "We design and develop websites that are not only visually appealing, but also functional and user-friendly."
+    description: "Your website is your digital storefront, and we make sure it turns heads. Whether you need something sleek, bold, or downright jaw-dropping, we’ll build it with precision and flair. Think of us as architects for your online empire—minus the boring blueprints."
   },
   {
     icon: TabletSmartphone,
     title: "App Development",
-    description: "We develop engaging mobile applications that meet the needs of your business and your customers."
+    description: "Got a million-dollar app idea? We’re your dream team. From concept to launch, we create apps that don’t just work—they wow. iOS, Android, or both? Consider it done. Your app will be smoother than a Kehwa latte. Perfectly brewed, every time."
   },
   {
     icon: SearchCheck,
-    title: "SEO Optimization",
-    description: "We help you optimize your website to rank higher on search engines and attract more organic traffic."
+    title: "Microsoft 365 Administation",
+    description: "Admin headaches? Not on our watch. We’ll manage Teams, Outlook, SharePoint, and more like the pros we are—so you can focus on what you do best. Think of us as your digital janitors, keeping everything spotless and running like clockwork."
   },
   {
     icon: GitGraph,
-    title: "Graphic Designing",
-    description: "Tell your story with stunning visuals. We create logos, banners, and other graphics that represent your brand."
+    title: "Digital Marketing",
+    description: "Why blend in when you can stand out? Our marketing campaigns pack a punch and deliver results that’ll make your competitors sweat:"
   },
   {
     icon: Wand2,
     title: "Whatsapp Automation",
-    description: "Automate your customer service and marketing efforts on WhatsApp with our chatbot solutions."
+    description: "Automate your customer service and marketing efforts on WhatsApp with our chatbot solutions and reach your customers where they are."
   },
   {
     icon: Box,
     title: "UI/UX Design",
-    description: "We design user interfaces that are intuitive and easy to use, ensuring a seamless user experience."
+    description: "We design user interfaces that are intuitive and easy to use, ensuring a seamless user experience. Our designs are not just visually appealing, but also functional."
   }
 ];
 

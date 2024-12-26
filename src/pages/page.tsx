@@ -9,9 +9,9 @@ import AnimatedChat from "@/components/animated-messages";
 import AnimatedGrowth from "@/components/growth-charts";
 import ChatInterface from "@/components/ai-chat";
 import { useEffect } from "react";
+import { FaqSection } from "./faqs";
 
 export default function LandingPage() {
-
   useEffect(() => {
     const heroSection = document.querySelector(".animated-bg");
     if (heroSection) {
@@ -50,14 +50,19 @@ export default function LandingPage() {
 
       {/* Hero Section */}
       <section className="container mx-auto px-4 py-20 text-center relative z-10">
-      <div className="animated-bg absolute inset-0 -z-10"></div>
+        <div className="animated-bg absolute inset-0 -z-10"></div>
         <h1 className="text-5xl md:text-7xl font-bold mb-6 leading-tight">
           Transforming Ideas into <br />
           Digital Reality
         </h1>
         <p className="text-gray-400 max-w-2xl mx-auto mb-8">
-          We craft innovative software solutions to empower your business in the
-          digital age. <br></br>Your idea, Our Code. Your Success, Our Pride.
+          Welcome to <strong>Code and Kehwa</strong> — where innovation gets brewed, and your
+          business gets the digital caffeine boost it needs! We’re not here to
+          play it safe; we’re here to shake things up, one pixel, one click, and
+          one campaign at a time. Let’s dive into what makes us the boldest brew
+          in the tech world.
+          {/* We craft innovative software solutions to empower your business in the
+          digital age. <br></br>Your idea, Our Code. Your Success, Our Pride. */}
         </p>
         <Button className="bg-gradient-to-r from-pink-400 to-purple-500 hover:from-pink-500 hover:to-purple-600 px-8 py-6 text-lg">
           <a href="#contact" className="text-white hover:text-white">
@@ -91,6 +96,9 @@ export default function LandingPage() {
 
       {/* Contact Form */}
       <ContactForm />
+
+      {/* FAQ Section */}
+      <FaqSection />
 
       {/* Footer */}
       <Footer />
