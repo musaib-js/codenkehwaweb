@@ -8,8 +8,25 @@ import { Footer } from "@/components/footer";
 import AnimatedChat from "@/components/animated-messages";
 import AnimatedGrowth from "@/components/growth-charts";
 import ChatInterface from "@/components/ai-chat";
+import { useEffect } from "react";
 
 export default function LandingPage() {
+
+  useEffect(() => {
+    const heroSection = document.querySelector(".animated-bg");
+    if (heroSection) {
+      for (let i = 0; i < 50; i++) {
+        const particle = document.createElement("div");
+        particle.classList.add("particle");
+        particle.style.left = `${Math.random() * 100}%`;
+        particle.style.top = `${Math.random() * 100}%`;
+        particle.style.animationDelay = `${Math.random() * 5}s`;
+        particle.style.animationDuration = `${10 + Math.random() * 10}s`;
+        heroSection.appendChild(particle);
+      }
+    }
+  }, []);
+
   return (
     <div className="min-h-screen bg-black text-white">
       {/* Navigation */}
@@ -33,6 +50,7 @@ export default function LandingPage() {
 
       {/* Hero Section */}
       <section className="container mx-auto px-4 py-20 text-center relative z-10">
+      <div className="animated-bg absolute inset-0 -z-10"></div>
         <h1 className="text-5xl md:text-7xl font-bold mb-6 leading-tight">
           Transforming Ideas into <br />
           Digital Reality
@@ -55,21 +73,6 @@ export default function LandingPage() {
             <AnimatedChat />
             <AnimatedGrowth />
             <ChatInterface />
-            {/* <Card className="bg-gray-800 border-gray-700">
-              <div className="p-4 space-y-4">
-                {[1, 2, 3, 4].map((item) => (
-                  <div key={item} className="flex items-center gap-3">
-                    <div className="w-10 h-10 rounded-full bg-gray-700 text-gray-400 flex items-center justify-center">
-                      <Users height={24} />
-                    </div>
-                    <div className="space-y-2 flex-1">
-                      <div className="h-4 bg-gray-700 rounded w-3/4" />
-                      <div className="h-3 bg-gray-700 rounded w-1/2" />
-                    </div>
-                  </div>
-                ))}
-              </div>
-            </Card> */}
           </div>
         </div>
       </section>

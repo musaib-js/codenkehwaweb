@@ -135,3 +135,49 @@ button:focus-visible {
     @apply bg-background text-foreground;
   }
 }
+
+/* Background animation */
+.animated-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-size: 400% 400%;
+  animation: gradientBG 15s ease infinite;
+  overflow: hidden;
+  z-index: -1;
+}
+
+/* Gradient animation */
+@keyframes gradientBG {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.particle {
+  position: absolute;
+  width: 6px;
+  height: 6px;
+  background-color: rgba(255, 255, 255, 0.8);
+  border-radius: 50%;
+  animation: moveParticles 20s linear infinite;
+}
+
+@keyframes moveParticles {
+  0% {
+    transform: translateY(0) scale(1);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(-100vh) scale(0.5);
+    opacity: 0;
+  }
+}
