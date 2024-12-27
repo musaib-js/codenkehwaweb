@@ -11,7 +11,7 @@ const companies = [
 
 export function CompanyLogos() {
   return (
-    <section className="bg-black" id="clients">
+    <section className="bg-black mt-4" id="clients">
       <div className="container mx-auto px-4">
         <h2 className="text-4xl md:text-5xl font-bold text-center text-white mb-16">
           Companies we've Worked<br />With

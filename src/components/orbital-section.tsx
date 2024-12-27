@@ -18,7 +18,7 @@ export function OrbitalSection() {
   const isMobile = window.innerWidth < 768
 
   return (
-    <section className={`relative min-h-screen bg-black overflow-hidden ${isMobile && 'mt-4' }`}>
+    <section className={`relative bg-black overflow-hidden ${isMobile && 'mt-4' }`}>
       <div className="container mx-auto px-4 py-20">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           {/* Orbital Animation */}

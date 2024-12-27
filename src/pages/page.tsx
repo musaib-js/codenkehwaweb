@@ -10,6 +10,7 @@ import AnimatedGrowth from "@/components/growth-charts";
 import ChatInterface from "@/components/ai-chat";
 import { useEffect } from "react";
 import { FaqSection } from "./faqs";
+import TestimonialsSection from "@/components/testimonials";
 
 export default function LandingPage() {
   useEffect(() => {
@@ -31,7 +32,7 @@ export default function LandingPage() {
     <div className="min-h-screen bg-black text-white">
       {/* Navigation */}
       <nav className="container mx-auto px-4 py-6 flex justify-between items-center">
-        <div className="flex items-center gap-2">
+        <div className="flex items-center gap-2 px-2">
           <div className="w-8 h-8">
             <svg viewBox="0 0 24 24" className="fill-current">
               <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8z" />
@@ -39,7 +40,7 @@ export default function LandingPage() {
           </div>
           <span className="text-xl font-bold">CodeNKehwa</span>
         </div>
-        <div className="flex items-center gap-4">
+        <div className="flex items-center gap-4 px-2">
           <Button className="bg-gradient-to-r from-pink-400 to-purple-500 hover:from-pink-500 hover:to-purple-600">
             <a href="#contact" className="text-white hover:text-white">
               Get Started
@@ -97,6 +98,7 @@ export default function LandingPage() {
       {/* Contact Form */}
       <ContactForm />
 
+      <TestimonialsSection />
       {/* FAQ Section */}
       <FaqSection />
 
