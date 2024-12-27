@@ -11,7 +11,7 @@ export function Footer() {
             Software Solutions
             <br />
             <span className="text-orange-500 font-medium">
-              with &lt;3
+              with &hearts;
             </span>
             <br />
             <span className="text-orange-500 font-medium">Zapware</span>
