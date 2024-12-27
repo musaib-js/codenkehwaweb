@@ -11,7 +11,7 @@ const features = [
   {
     icon: TabletSmartphone,
     title: "App Development",
-    description: "Got a million-dollar app idea? We’re your dream team. From concept to launch, we create apps that don’t just work—they wow. iOS, Android, or both? Consider it done. Your app will be smoother than a Kehwa latte. Perfectly brewed, every time."
+    description: "Got a million-dollar app idea? We’re your dream team. From concept to launch, we create apps that don’t just work—they wow. iOS, Android, or both? Consider it done. Your app will be smoother than a Coffee latte. Perfectly brewed, every time."
   },
   {
     icon: SearchCheck,

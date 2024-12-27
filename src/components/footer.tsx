@@ -11,10 +11,10 @@ export function Footer() {
             Software Solutions
             <br />
             <span className="text-orange-500 font-medium">
-              with &lt;3
+              with &hearts;
             </span>
             <br />
-            <span className="text-orange-500 font-medium">CodeNKehwa</span>
+            <span className="text-orange-500 font-medium">Zapware</span>
           </h2>
           {/* Social Icons */}
           <div className="flex gap-6 mt-8">
@@ -53,7 +53,7 @@ export function Footer() {
         <div className="col-span-1">
           <h3 className="text-lg mb-6">Contact</h3>
           <div className="space-y-4">
-            <p>hr@codenkehwa.in</p>
+            <p>contact@zapware.in</p>
             <p>+91 95414 83162</p>
             <p className="max-w-xs">
               Sopore, Jammu & Kashmir, India, 193201
@@ -65,13 +65,13 @@ export function Footer() {
       {/* Large Brand Name */}
       <div className="container mx-auto mb-12">
         <h1 className="text-[12vw] font-bold leading-none tracking-tighter text-center">
-          CodeNKehwa
+          Zapware.in
         </h1>
       </div>
 
       {/* Bottom Bar */}
       <div className="container mx-auto flex flex-col md:flex-row justify-between items-center text-sm text-gray-400">
-        <p>© 2024  CodeNKehwa</p>
+        <p>© 2024  Zapware</p>
         <div className="flex gap-8 mt-4 md:mt-0">
           <a href="#" className="hover:text-white transition-colors text-gray-400">
             Terms & Conditions

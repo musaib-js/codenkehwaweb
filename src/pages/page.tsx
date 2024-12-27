@@ -29,16 +29,16 @@ export default function LandingPage() {
   }, []);
 
   return (
-    <div className="min-h-screen !w-full bg-black text-white  !z-50">
+    <div className="min-h-screen !w-full bg-black text-white  !z-50 ">
       {/* Navigation */}
-      <nav className="container mx-auto px-4 py-6 flex justify-between items-center">
+      <nav className="container mx-auto px-4 py-6 flex justify-between items-center !sticky top-0 bg-black z-50">
         <div className="flex items-center gap-2 px-2">
           <div className="w-8 h-8">
             <svg viewBox="0 0 24 24" className="fill-current">
               <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8z" />
             </svg>
           </div>
-          <span className="text-xl font-bold">CodeNKehwa</span>
+          <span className="text-xl font-bold">Zapware</span>
         </div>
         <div className="flex items-center gap-4 px-2">
           <Button className="bg-gradient-to-r from-pink-400 to-purple-500 hover:from-pink-500 hover:to-purple-600">
@@ -57,7 +57,7 @@ export default function LandingPage() {
           Digital Reality
         </h1>
         <p className="text-gray-400 max-w-2xl mx-auto mb-8">
-          Welcome to <strong>Code and Kehwa</strong> — where innovation gets
+          Welcome to <strong>Zapware</strong> — where innovation gets
           brewed, and your business gets the digital caffeine boost it needs!
           We’re not here to play it safe; we’re here to shake things up, one
           pixel, one click, and one campaign at a time. Let’s dive into what

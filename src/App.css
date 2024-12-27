@@ -34,3 +34,10 @@
 .read-the-docs {
   color: #888;
 }
+
+
+
+::-webkit-scrollbar {
+  scrollbar-width:none ;
+  
+}

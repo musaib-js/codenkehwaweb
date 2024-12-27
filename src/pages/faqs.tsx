@@ -8,7 +8,7 @@ import {
 const faqs = [
   {
     question: "How can I contact you?",
-    answer: "Drop us a message on our contact form, and we'll get back to you as soon as possible. You can also reach out to us on hr@codeandkehwa.in or call us at 7006859685 or 9541483162.",
+    answer: "Drop us a message on our contact form, and we'll get back to you as soon as possible. You can also reach out to us on contact@zapware.in or call us at 7006859685 or 9541483162.",
   },
   {
     question: "What all comes in the Digital Marketing Services?",
@@ -16,7 +16,7 @@ const faqs = [
   },
   {
     question: "How can I get a quote for my project?",
-    answer: "We offer free consultations to understand your project requirements and provide you with a quote. You can reach out to us on hr@codeandkehwa.in or call us at 7006859685 or 9541483162.",
+    answer: "We offer free consultations to understand your project requirements and provide you with a quote. You can reach out to us on contact@zapware.in or call us at 7006859685 or 9541483162.",
   },
   {
     question: "What all AI services can I avail?",
@@ -24,11 +24,11 @@ const faqs = [
   },
   {
     question: "How can I get a website developed?",
-    answer: "We offer website development services to help you build a professional online presence. Our team of experts will work with you to understand your requirements and develop a website that meets your needs. You can reach out to us on hr@codeandkehwa.in or call us at 7006859685 or 9541483162.",
+    answer: "We offer website development services to help you build a professional online presence. Our team of experts will work with you to understand your requirements and develop a website that meets your needs. You can reach out to us on contact@zapware.in or call us at 7006859685 or 9541483162.",
   },
   {
     question: "I have a project idea. How can I get started?",
-    answer: "We'd love to hear about your project idea! Drop us a message on our contact form, and we'll get back to you as soon as possible. You can also reach out to us o hr@codeandkehwa.in or call us at 7006859685 or 9541483162.",
+    answer: "We'd love to hear about your project idea! Drop us a message on our contact form, and we'll get back to you as soon as possible. You can also reach out to us o contact@zapware.in or call us at 7006859685 or 9541483162.",
   },
 ]
 
