@@ -19,11 +19,11 @@ export function CompanyLogos() {
         <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-6">
           {companies.map((company) => (
             <Card key={company.name} className="bg-gray-900/50 border-gray-800 p-6 flex items-center justify-center">
-              <span className="text-gray-500 font-medium text-xl truncate" title={company.name}>
+              <span className="text-gray-500 font-medium text-sm " title={company.name}>
                 {
                   company.link ? (
                     <a href={company.link} target="_blank" rel="noopener noreferrer" className="text-gray-400">
-                      {company?.logo?.length > 10 ? company.logo.slice(0, 10) + "..." : company.logo}
+                      { company.logo}
                     </a>
                   ) : (
                      company.logo
