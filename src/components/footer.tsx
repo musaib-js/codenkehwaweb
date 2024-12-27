@@ -53,7 +53,7 @@ export function Footer() {
         <div className="col-span-1">
           <h3 className="text-lg mb-6">Contact</h3>
           <div className="space-y-4">
-            <p>hr@Zapware.in</p>
+            <p>contact@zapware.in</p>
             <p>+91 95414 83162</p>
             <p className="max-w-xs">
               Sopore, Jammu & Kashmir, India, 193201
