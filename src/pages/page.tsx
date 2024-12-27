@@ -29,7 +29,7 @@ export default function LandingPage() {
   }, []);
 
   return (
-    <div className="min-h-screen bg-black text-white z-50">
+    <div className="min-h-screen bg-black text-white !z-50">
       {/* Navigation */}
       <nav className="container mx-auto px-4 py-6 flex justify-between items-center">
         <div className="flex items-center gap-2 px-2">
@@ -57,11 +57,11 @@ export default function LandingPage() {
           Digital Reality
         </h1>
         <p className="text-gray-400 max-w-2xl mx-auto mb-8">
-          Welcome to <strong>Code and Kehwa</strong> — where innovation gets brewed, and your
-          business gets the digital caffeine boost it needs! We’re not here to
-          play it safe; we’re here to shake things up, one pixel, one click, and
-          one campaign at a time. Let’s dive into what makes us the boldest brew
-          in the tech world.
+          Welcome to <strong>Code and Kehwa</strong> — where innovation gets
+          brewed, and your business gets the digital caffeine boost it needs!
+          We’re not here to play it safe; we’re here to shake things up, one
+          pixel, one click, and one campaign at a time. Let’s dive into what
+          makes us the boldest brew in the tech world.
           {/* We craft innovative software solutions to empower your business in the
           digital age. <br></br>Your idea, Our Code. Your Success, Our Pride. */}
         </p>
@@ -106,7 +106,7 @@ export default function LandingPage() {
       <Footer />
 
       {/* Background Gradient */}
-      <div className="fixed bottom-0 left-0 right-0 h-96 bg-gradient-to-r from-pink-500 to-purple-600 blur-3xl opacity-20" />
+      <div className="fixed bottom-0 left-0 right-0 h-96 bg-gradient-to-r from-pink-500 to-purple-600 blur-3xl opacity-20 pointer-events-none" />
     </div>
   );
 }
