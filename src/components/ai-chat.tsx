@@ -22,7 +22,7 @@ const ChatInterface = () => {
     },
     {
       type: 'ai',
-      content: 'Hold my Kehwa, I got this!',
+      content: 'Hold my Coffee, I got this!',
       timestamp: '2:30 PM'
     }
   ];

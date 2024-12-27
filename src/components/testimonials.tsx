@@ -17,21 +17,21 @@ interface Testimonial {
 
 const testimonials: Testimonial[] = [
   {
-    content: "I had an amazing experience working with the team at CodeNKehwa. They were able to take my vision and turn it into a reality. I would highly recommend them to anyone looking for a professional and reliable team to work with.",
+    content: "I had an amazing experience working with the team at Zapware. They were able to take my vision and turn it into a reality. I would highly recommend them to anyone looking for a professional and reliable team to work with.",
     author: "Wasif Rashid",
     role: "CEO of The Asian Real Estate",
     rating: 5,
     image: ""
   },
   {
-    content: "It's been four years that we have been associated with CodeNKehwa. They have been instrumental in helping with out website every year. They always deliver on time with absolute precision. We would highly recommend them to anyone!",
+    content: "It's been four years that we have been associated with Zapware. They have been instrumental in helping with out website every year. They always deliver on time with absolute precision. We would highly recommend them to anyone!",
     author: "Manjiri Prabhu",
     role: "Chairperson of PILF",
     rating: 5,
     image: ""
   },
   {
-    content: "I have been working with CodeNKehwa for over a year now and I am extremely happy with the results. They are professional, reliable and always deliver on time. I would highly recommend them to anyone looking for a digital marketing agency.",
+    content: "I have been working with Zapware for over a year now and I am extremely happy with the results. They are professional, reliable and always deliver on time. I would highly recommend them to anyone looking for a digital marketing agency.",
     author: "Er Aaqib Maqbool",
     role: "CEO of Get Advice Consultancy Services",
     rating: 5,
