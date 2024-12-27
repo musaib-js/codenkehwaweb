@@ -41,10 +41,10 @@ const testimonials: Testimonial[] = [
 
 export default function TestimonialsSection() {
   return (
-    <div className="bg-black p-8 z-10">
+    <div className="bg-black p-8 z-50">
       <div className="mx-auto max-w-6xl">
         <h2 className="mb-12 text-center text-4xl font-bold text-white">
-          Testimonails
+          Testimonials
         </h2>
         <Carousel
           opts={{
