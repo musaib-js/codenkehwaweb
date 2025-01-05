@@ -7,6 +7,8 @@ import {
   SearchCheck,
   GitGraph,
   TabletSmartphone,
+  Mail,
+  PenTool
 } from "lucide-react";
 
 const features = [
@@ -50,7 +52,18 @@ const features = [
     icon: Box,
     title: "DevOps",
     description:
-      "We help you automate your software development processes, ensuring faster and more reliable software delivery.",
+      "We help you automate your software development and deployment processes, ensuring faster and more reliable software delivery.",
+  },
+  {
+    icon: Mail,
+    title: "Email Marketing",
+    description:
+      "We help you create and send email campaigns that drive engagement and conversions. Our email marketing services help you reach your audience effectively.",
+  },
+  {
+    icon: PenTool,
+    title: "Graphic Designing",
+    description: "We create visually appealing designs that help you stand out from the competition. Our graphic design services help you communicate your brand message effectively.",
   },
 ];
 
