@@ -71,7 +71,7 @@ export function Footer() {
       <div className="container mx-auto mb-12 text-center">
         <h1 className="text-[12vw] font-bold leading-none tracking-tighter text-center">
           {/* Zapware.in */}
-          <img src="/logo.svg" alt="Zapware" className="mx-auto scale-[1.5]" />
+          <img src="/logo.svg" alt="Zapware" className="mx-auto md:scale-[1.5] lg:scale-[2.0]" />
         </h1>
       </div>
 
