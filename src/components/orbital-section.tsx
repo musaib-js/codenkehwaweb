@@ -81,11 +81,14 @@ export function OrbitalSection() {
             <p className="text-gray-400 text-lg mb-8 max-w-2xl mx-auto lg:mx-0">
               Your success is our success. We are committed to providing you with the best possible service and support.
             </p>
+            <a href="#contact">
+
             <Button 
               className="bg-gradient-to-r from-pink-400 to-purple-500 hover:from-pink-500 hover:to-purple-600 text-white px-8 py-6 text-lg rounded-md"
             >
               Get Started Now
             </Button>
+            </a>
           </div>
         </div>
       </div>
