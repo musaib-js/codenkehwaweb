@@ -11,6 +11,7 @@ import ChatInterface from "@/components/ai-chat";
 import { useEffect } from "react";
 import { FaqSection } from "./faqs";
 import TestimonialsSection from "@/components/testimonials";
+import { Analytics } from "@vercel/analytics/react"
 
 export default function LandingPage() {
   useEffect(() => {
@@ -104,6 +105,8 @@ export default function LandingPage() {
 
       {/* Footer */}
       <Footer />
+
+      <Analytics/>
 
       {/* Background Gradient */}
       <div className="fixed bottom-0 left-0 right-0 h-96 bg-gradient-to-r from-pink-500 to-purple-600 blur-3xl opacity-20 pointer-events-none" />
