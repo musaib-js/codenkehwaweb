@@ -1,6 +1,5 @@
 import { Card } from "@/components/ui/card";
 import { motion } from "framer-motion";
-import React from "react";
 
 const companies = [
   { name: "The Asian Real Estate", logo: "The Asian Real Estate", link: "https://www.theasianrealestate.com" },
