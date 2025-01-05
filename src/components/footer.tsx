@@ -11,10 +11,15 @@ export function Footer() {
             Software Solutions
             <br />
             <span className="text-orange-500 font-medium">
-              with &hearts;
+              with &hearts; at
             </span>
             <br />
-            <span className="text-orange-500 font-medium">Zapware</span>
+            <span className="text-orange-500 font-medium">
+            <img src="/logo.svg" alt="Zapware" style={{
+            width: "160px",
+            height: "50px"
+          }} />
+            </span>
           </h2>
           {/* Social Icons */}
           <div className="flex gap-6 mt-8">
@@ -63,9 +68,10 @@ export function Footer() {
       </div>
 
       {/* Large Brand Name */}
-      <div className="container mx-auto mb-12">
+      <div className="container mx-auto mb-12 text-center">
         <h1 className="text-[12vw] font-bold leading-none tracking-tighter text-center">
-          Zapware.in
+          {/* Zapware.in */}
+          <img src="/logo.svg" alt="Zapware" className="mx-auto scale-[1.5]" />
         </h1>
       </div>
 
