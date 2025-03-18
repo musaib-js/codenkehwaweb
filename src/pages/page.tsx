@@ -40,9 +40,9 @@ export default function LandingPage() {
             </svg>
           </div>
           <span className="text-xl font-bold">Zapware</span> */}
-          <img src="/logo.svg" alt="Zapware" style={{
-            width: "150px",
-            height: "40px"
+          <img src="/zap.svg" alt="Zapware" style={{
+            width: "180px",
+            height: "50px"
           }} />
         </div>
         <div className="flex items-center gap-4 px-2">

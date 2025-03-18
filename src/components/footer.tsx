@@ -68,10 +68,10 @@ export function Footer() {
       </div>
 
       {/* Large Brand Name */}
-      <div className="container mx-auto mb-12 text-center">
+      <div className="container mx-auto mb-16 text-center">
         <h1 className="text-[12vw] font-bold leading-none tracking-tighter text-center">
           {/* Zapware.in */}
-          <img src="/logo.svg" alt="Zapware" className="mx-auto md:scale-[1.5] lg:scale-[2.0]" />
+          <img src="/zap.svg" alt="Zapware" className="mx-auto md:scale-[1.5] lg:scale-[2.0]" />
         </h1>
       </div>
 
