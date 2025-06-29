@@ -2,6 +2,7 @@ import { Card } from "@/components/ui/card";
 import { motion } from "framer-motion";
 
 const companies = [
+  {name: "Revonex", logo: "Revonex", link: "https://revonex.in"},
   { name: "The Asian Real Estate", logo: "The Asian Real Estate", link: "https://www.theasianrealestate.com" },
   { name: "Growth Gear Innovations", logo: "Growth Gear Innovations", link: "https://growthgearinnovations.in" },
   { name: "FirstTech Media", logo: "FirstTech Media", link: "https://firsttechmedia.com" },
